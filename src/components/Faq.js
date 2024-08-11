@@ -1,4 +1,4 @@
-import React, { act, useState } from "react";
+import React, { useState } from "react";
 import { ReactComponent as HideIcon } from "../images/icon-minus.svg";
 import { ReactComponent as RevealIcon } from "../images/icon-plus.svg";
 
@@ -22,12 +22,14 @@ function Faq({ faqData }) {
             <HideIcon
               className="transition-transform delay-300 duration-300 transform rotate-180"
               onClick={handleClick}
+              alt="hide answer button"
               id={`icon-${data.id}`}
             />
           ) : (
             <RevealIcon
               className="transition-transform duration-300 transform rotate-0"
               onClick={handleClick}
+              alt="reveal answer button"
               id={`icon-${data.id}`}
             />
           )}

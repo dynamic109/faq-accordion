@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import faqData from "./data";
 import "./App.css";
@@ -21,7 +21,7 @@ function App() {
     <main className="flex justify-center p-5 font-sans" style={styles}>
       <div className="w-3/4 md:w-2/4  mt-[100px] shadow-xl rounded-md absolute bg-white p-5">
         <div className="flex w-2/5 md:w-1/5 justify-between items-center mb-8">
-          <img src={faqIcon} />
+          <img alt="a star image" src={faqIcon} />
           <h1 className="tracking-widest font-extrabold text-[22px]">FAQs</h1>
         </div>
         <Faq faqData={faqData} />
